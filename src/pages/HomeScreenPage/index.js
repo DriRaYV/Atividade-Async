@@ -70,13 +70,6 @@ const HomeScreen = () => {
   };
 
   const handleFetchOneMovie = async () => {
-    console.log(
-      `https://api.themoviedb.org/3/discover/movie?api_key=${
-        process.env.REACT_APP_MOVIE_API_TOKEN
-      }&language=pt-br&include_adult=false&page=${Math.floor(
-        Math.random() * 500
-      )}`
-    );
     return fetch(
       `https://api.themoviedb.org/3/discover/movie?api_key=${
         process.env.REACT_APP_MOVIE_API_TOKEN
